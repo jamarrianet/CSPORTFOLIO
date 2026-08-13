@@ -15,11 +15,11 @@ The new vending machine that was installed is inefficient and has a lot of defec
 
   For each sub-problem, apply CT skills:
 
-Sub-Problem                                               CT Skill                 Example Solution
-Wrong Change                                              Algorithm                Running a program check and fixing errors within it can help avoid errors when the machine computes for a user’s amount of change.
-Malfunctioning after a few uses                           Decomposition            The machine might be malfunctioning due to complex/unclear instructions. Decomposition would help to simplify the processes for the machine to avoid malfunctioning.
-Wrong item delivery                                       Abstraction              Learning why the machine gives the wrong item to the buyer once can help us fix the whole thing.
-Machine not notifying when an item is unavailable         Pattern Recognition      The machine can recognize the pattern of the item being unavailable once it has reached a quantity of 0. The machine can display an out of stock text to notify the user that the item is unavailable.
+1.)Algorithm - Running a program check and fixing errors within it can help avoid errors when the machine computes for a user’s amount of change.
+2.)Pattern Recognition - The machine can recognize the pattern of the item being unavailable once it has reached a quantity of 0. The machine can display an out of stock text to notify the user that the item is unavailable.
+3.)Abstraction - Learning why the machine gives the wrong item to the buyer once can help us fix the whole thing.
+4.)Decomposition - The machine might be malfunctioning due to complex/unclear instructions. Decomposition would help to simplify the processes for the machine to avoid malfunctioning.
+
 
   Pseudocode : 
   
