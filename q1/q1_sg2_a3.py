@@ -2,6 +2,8 @@
 ## SECTION : BALINGKILAT
 ## DATE : 08/13/26
 
+# Activity 3: Implementing Selection Structure - Chinese Zodiac Sign
+
 CODE : 
 
 birth = int(input("What is your birth year?: "))
