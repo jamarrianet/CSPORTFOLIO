@@ -19,5 +19,8 @@ FA5 :
 FA6 :
     https://github.com/jamarrianet/CSPORTFOLIO/blob/main/q1/q1_sg6_balingkilat_Soriano
 
+Tusoktusok Sample :
+    https://github.com/jamarrianet/CSPORTFOLIO/blob/main/q1/q1_tusoktusok_balinkilat_Soriano
+
 FA7 :
     https://github.com/jamarrianet/CSPORTFOLIO/blob/main/q1/q1_sg7_balingkilat_Soriano
