@@ -1,7 +1,7 @@
 # CS PORTFOLIO
 
 # Name : Marriane Audrey F. Soriano
-# Section : 9 Balinkilat
+# Section : 9 Balingkilat
 
 # Q1 ACTIVITIES
 Car Sample :
