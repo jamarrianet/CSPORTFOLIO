@@ -1,3 +1,5 @@
-#SORIANO, Marriane Audrey F.
-#9 Balingkilat
+# CS PORTFOLIO
+
+# Name : Marriane Audrey F. Soriano
+# Section : 9 Balinkilat
 
