@@ -1,0 +1,19 @@
+##CN/NAME : #30 SORIANO, Marriane Audrey F.
+##SECTION : Balingkilat
+##DATE : 09/17/2026
+
+class Glassware:
+    def __init__(self):
+        pass
+    
+class Beaker(Glassware):
+    def __init__(self, capacityinmL = 250):
+        super().__init__()
+        self.capacityinmL = capacityinmL
+
+class Tray:
+    def __init__(self):
+        self,beaers = [Beaker() for i in range(5)]
+
+myTray = Tray()
+print(f"Tray created with{len(myTrat.beakers)} beakers.")
