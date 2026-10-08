@@ -59,7 +59,8 @@ class Bank:
                 a.deposit(amount)
                 print("Deposit successful")
                 print(a)
-                
+    def addInterest(self):
+        print("Adding interest to all savings accounts")
 
 bank = Bank("Land Bank of the Philippines")
 bank.openAccount()
