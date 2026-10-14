@@ -1,0 +1,51 @@
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.__account_number = account_number
+        self.__balance = 0
+        self.set_balance(balance)
+
+    # Setter for account number
+    def set_account_number(self, account_number):
+        self.__account_number = account_number
+
+    # Setter for balance
+    def set_balance(self, balance):
+        if balance < 0:
+            print("Warning: Balance cannot be negative.")
+        else:
+            self.__balance = balance
+
+    # Getter for account number
+    @property
+    def account_number(self):
+        return self.__account_number
+
+    # Getter for balance
+    @property
+    def balance(self):
+        return self.__balance
+
+
+# Create an object of the BankAccount class
+account = BankAccount("1234567890", 5000)
+
+# Display the original account details
+print("Object of class BankAccount")
+print("Account Number:", account.account_number)
+print(f"Balance: ₱{account.balance:,.2f}")
+
+# Use the setter for account number
+account.set_account_number("9876543210")
+
+# Use the setter for balance
+account.set_balance(10000)
+
+print("\nUpdated Account Details")
+print("Account Number:", account.account_number)
+print(f"Balance: ₱{account.balance:,.2f}")
+
+# Attempt to set a negative balance
+account.set_balance(-500)
+
+# Display the balance to show that the negative value was ignored
+print(f"Balance after invalid update: ₱{account.balance:,.2f}")
