@@ -76,7 +76,6 @@ print("Public Information: ")
 pub1.display_info()
 
 print("\nBook Information: ")
-# attempt to set an invalid page count; the setter will reject and keep the previous valid value
 book1.set_number_of_pages(-310)
 book1.display_info()
 
