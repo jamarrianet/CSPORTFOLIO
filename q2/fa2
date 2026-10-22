@@ -1,53 +1,57 @@
+'''
+CN/NAME : #30 SORIANO, Marriane Audrey F.
+SECTION : 9 Balingkilat
+DATE : Oct 22 2026
+'''
+
+# DA CODE  
 
 class Patient:
-    def __init__(self, name, bill_amount):
+    def __init__ (self,name,bill_amount):
         self.__name = name
         self.__bill_amount = bill_amount
-
     def get_name(self):
         return self.__name
-
+    def set_name(self,name):
+        self.__name = name
     def get_bill_amount(self):
         return self.__bill_amount
-
-    def set_name(self, name):
-        self.__name = name
-
-    def set_bill_amount(self, bill_amount):
+    def set_bill_amount(self,bill_amount):
         self.__bill_amount = bill_amount
-
     def calculate_bill(self):
         return self.__bill_amount
 
-
-class SeniorPatient(Patient):
+class Senior_Patient(Patient):
     def calculate_bill(self):
         return self.get_bill_amount() * 0.80
 
-
-class PhilHealthPatient(Patient):
+class PhilHealth_Patient(Patient):
     def calculate_bill(self):
         return self.get_bill_amount() * 0.85
 
+# MY TEST SUBJECTS
 
-regular_patient = Patient("Juan Dela Cruz", 15000)
-senior_patient = SeniorPatient("Maria Santos", 15000)
-philhealth_patient = PhilHealthPatient("Pedro Reyes", 15000)
+rp = Patient("Shai Gilgeous Alexander", 15000)
+sp = Senior_Patient("Malaki Ka Na Di Na Baby Ni Papa",15000)
+php = PhilHealth_Patient("Esme Rain Uy", 15000)
 
+# YUNG IPRIPRINT
 
-print("=== HOSPITAL BILLING SYSTEM ===")
+print("Hospital Billing System")
+print("------------------------")
 
-print("\nRegular Patient")
-print("Name:", regular_patient.get_name())
-print("Original Bill: ₱", regular_patient.get_bill_amount())
-print("Final Bill: ₱", regular_patient.calculate_bill())
+print("Patient Name:", rp.get_name())
+print("Original Bill:", "P",rp.get_bill_amount())
+print("Final Bill:", "P",rp.calculate_bill())
 
-print("\nSenior Patient")
-print("Name:", senior_patient.get_name())
-print("Original Bill: ₱", senior_patient.get_bill_amount())
-print("Final Bill: ₱", senior_patient.calculate_bill())
+print(" ")
 
-print("\nPhilHealth Patient")
-print("Name:", philhealth_patient.get_name())
-print("Original Bill: ₱", philhealth_patient.get_bill_amount())
-print("Final Bill: ₱", philhealth_patient.calculate_bill())
+print("Patient Name:", sp.get_name())
+print("Original Bill:", "P",sp.get_bill_amount())
+print("Final Bill:", "P",sp.calculate_bill())
+
+print(" ")
+
+print("Patient Name:", php.get_name())
+print("Original Bill:", "P",php.get_bill_amount())
+print("Final Bill:", "P",php.calculate_bill())
