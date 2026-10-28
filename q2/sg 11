@@ -52,4 +52,122 @@ for patient in patients:
     print("Bill Amount:", patient.calculate_bill())
     print()
 
-  
+act 2 : 
+Duck typing is a concept in Python where an object's type is less important than the methods
+or behaviors it has. If an object has the required method, it can be used in a particular function.
+
+The Car class needed to have the same method that the Dog and Cat classes use,
+such as speak(). This allows it to work in the same loop without inheriting from the Animal class.
+
+The code demonstrates polymorphism because the same method, move()
+behaves differently depending on the object calling it. The Car, Boat, and 
+Drone classes have their own implementations of the method.
+
+class Car:
+    def move(self):
+        print("The car drives on the road.")
+
+
+class Boat:
+    def move(self):
+        print("The boat sails on water.")
+
+
+class Drone:
+    def move(self):
+        print("The drone flies in the sky.")
+
+
+def start_trip(vehicle):
+    vehicle.move()
+
+
+# Creating objects
+car = Car()
+boat = Boat()
+drone = Drone()
+
+# Calling start_trip()
+start_trip(car)
+start_trip(boat)
+start_trip(drone)
+
+
+act 3
+class Warrior:
+    def special_move(self):
+        print("Warrior swings a mighty sword!")
+
+
+class Mage:
+    def special_move(self):
+        print("Mage casts a powerful spell!")
+
+
+class Archer:
+    def special_move(self):
+        print("Archer shoots a precise arrow!")
+
+
+def perform_move(character):
+    character.special_move()
+
+
+# Creating objects
+warrior = Warrior()
+mage = Mage()
+archer = Archer()
+
+# Storing objects in a list
+characters = [warrior, mage, archer]
+
+# Calling perform_move() using a loop
+for character in characters:
+    perform_move(character)
+
+
+act 4
+class HealthPotion:
+    def use(self):
+        print("You regain 50 HP!")
+
+
+class ManaPotion:
+    def use(self):
+        print("You restore 30 MP!")
+
+
+class SpeedBoost:
+    def use(self):
+        print("Your speed increases for 10 seconds!")
+
+
+def apply_item(item):
+    item.use()
+
+
+# Creating objects
+health = HealthPotion()
+mana = ManaPotion()
+speed = SpeedBoost()
+
+# Storing objects in a list
+potions = [health, mana, speed]
+
+# Calling apply_item() using a loop
+for potion in potions:
+    apply_item(potion)
+
+act5
+All these methods perform a specific action. 
+They have the same method names within their respective classes, 
+but their implementations differ depending on the object.
+
+shows polymorphism because different game characters and items can perform the same action in 
+different ways. For example, different characters can use their special moves, 
+while different potions can produce different effects using the same method name.
+
+For example, a attack() method can behave differently depending
+on the character. A Warrior can perform a sword attack, 
+a Mage can cast a magic attack, and an Archer can shoot an arrow. 
+Similarly, an equip() method can equip different weapons depending on the item
