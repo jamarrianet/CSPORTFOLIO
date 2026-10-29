@@ -1,0 +1,57 @@
+'''
+CN/NAME : #30 SORIANO, Marriane Audrey F.
+SECTION : 9 Balingkilat
+DATE : Oct 22 2026
+'''
+
+# DA CODE  
+
+class Patient:
+    def __init__ (self,name,bill_amount):
+        self.__name = name
+        self.__bill_amount = bill_amount
+    def get_name(self):
+        return self.__name
+    def set_name(self,name):
+        self.__name = name
+    def get_bill_amount(self):
+        return self.__bill_amount
+    def set_bill_amount(self,bill_amount):
+        self.__bill_amount = bill_amount
+    def calculate_bill(self):
+        return self.__bill_amount
+
+class Senior_Patient(Patient):
+    def calculate_bill(self):
+        return self.get_bill_amount() * 0.80
+
+class PhilHealth_Patient(Patient):
+    def calculate_bill(self):
+        return self.get_bill_amount() * 0.85
+
+# MY TEST SUBJECTS
+
+rp = Patient("Shai Gilgeous Alexander", 15000)
+sp = Senior_Patient("Malaki Ka Na Di Na Baby Ni Papa",15000)
+php = PhilHealth_Patient("Esme Rain Uy", 15000)
+
+# YUNG IPRIPRINT
+
+print("Hospital Billing System")
+print("------------------------")
+
+print("Patient Name:", rp.get_name())
+print("Original Bill:", "P",rp.get_bill_amount())
+print("Final Bill:", "P",rp.calculate_bill())
+
+print(" ")
+
+print("Patient Name:", sp.get_name())
+print("Original Bill:", "P",sp.get_bill_amount())
+print("Final Bill:", "P",sp.calculate_bill())
+
+print(" ")
+
+print("Patient Name:", php.get_name())
+print("Original Bill:", "P",php.get_bill_amount())
+print("Final Bill:", "P",php.calculate_bill())
