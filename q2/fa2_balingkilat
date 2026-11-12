@@ -1,0 +1,33 @@
+##CN/NAME : #30 SORIANO, Marriane Audrey F.
+##SECTION : 9 Balingkilat
+##DATE : 2026-12-11
+
+
+from abc import ABC, abstractmethod
+
+class Sensor(ABC):
+    @abstractmethod
+    def get_reading(self):
+        pass
+
+class TempSensor(Sensor):
+    def __init__(self):
+        super().__init__()
+    def get_reading(self):
+        print("[Temperature Sensor] Reading: 24.5°C")
+
+class PHSensor(Sensor):
+    def __init__(self):
+        super().__init__()
+
+    def get_reading(self):
+        print("[pH Sensor] Reading: 7.2 pH (Neutral)")
+
+print("--- Lab Inventory System ---")
+pH_sensor = PHSensor()
+tsensor = TempSensor()
+pH_sensor.get_reading()
+tsensor.get_reading()
+print("\n ----------------------------")
+
+my_sensor = Sensor()
